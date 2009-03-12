@@ -3,13 +3,16 @@
 No brainer wrapper for using the PivotalTracker API.
 
 Start with declaring the token.
+
 Pivotal.token = 'TOKEN'
 
 Then just use the classes provided by Pivotal
 
 == Querying:
 projects = Pivotal::Project.find(:all)
+
 projects[0].stories
+
 Pivotal::Stories.find(:all, :params => { :project_id => '123' })
 
 == Saving:
@@ -17,6 +20,7 @@ projects[1].destroy
 
 == Updating
 projects[2].name = "My New Project Name"
+
 projects[2].save
 
 == Copyright

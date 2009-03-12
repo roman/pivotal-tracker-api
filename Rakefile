@@ -5,10 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "pivotal-tracker-api"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{Ruby Library for interacting with PivotalTracker API}
     gem.email = "romanandreg@gmail.com"
     gem.homepage = "http://github.com/roman/pivotal-tracker-api"
     gem.authors = ["Roman Gonzalez"]
+    gem.files = ['lib/pivotal_tracker.rb', 'lib/pivotal_tracker_api.rb']
+    gem.require_path = "lib"
+    gem.add_development_dependency 'activeresource', '~> 2.2.2'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError

@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
+
   s.name = %q{pivotal-tracker-api}
   s.version = "0.0.1"
 
